@@ -1,0 +1,9 @@
+1. Create four cubes named Cube1–Cube4.
+2. Add an empty GameObject named "FrequencyDetector".
+3. Attach the AudioFrequency script to it and add an AudioSource with your music clip.
+4. In the Inspector, set:
+   • Frequencies (e.g. 100, 500, 1000, 3000)
+   • Thresholds (e.g. 0.02, 0.015, 0.01, 0.005)
+   • Sample Size (e.g. 1024)
+   • Drag Cube1–Cube4 into the Targets array.
+5. Play: each cube appears when its frequency's amplitude exceeds its threshold.

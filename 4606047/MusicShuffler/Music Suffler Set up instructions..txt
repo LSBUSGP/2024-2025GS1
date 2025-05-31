@@ -1,0 +1,13 @@
+1. Create empty game objects for the following:
+MusicPlayer
+MusicShuffler
+MusicShuffleTest
+2. Assigned same named scripts to gameObjects.
+3. Add an Audio Source Component to MusicPlayer gameObject.
+4. Create a Resources folder and place within it a Music and Scripts folder.
+5. Place your chosen music tracks into the Music folder and the scripts into the Scripts Folder.
+Name the tracks something easy to remember like Track1/2/3 etc.
+6. Add your tracks to the Music shuffler, by typing the track names in and expanding the list.
+7. Assign the MusicShuffler to the Music Shuffle field in the MusicShufflerTester gameObject.
+8. Add the MusicPlayer to the MusicShuffler gameObject in the Audio source Field and the Music Shuffler to the Music Shuffle field.
+9. Click Play.

@@ -1,0 +1,17 @@
+Radar Scene Setup:
+1. Create a Canvas (Screen Space–Overlay).
+2. Under Canvas, add an Image named "RadarUI" (e.g. 200×200 px).  
+   (Optional) Add a Mask + circular sprite for a round radar.
+3. In the scene, create a UI Image named "RadarIcon" and assign a small dot sprite.  
+   • Drag it into Assets/Prefabs to make it a prefab, then delete it from the scene.
+4. In your Project window, create Assets/Scripts and add two files:  
+   • RadarContact.cs (empty MonoBehaviour)  
+   • Radar.cs   (radar manager script)
+5. In the Hierarchy, create an empty GameObject named "RadarManager" and attach the Radar.cs script.
+6. In the Inspector on RadarManager, set:  
+   • Player → your player’s Transform  
+   • Radar UI → the RadarUI Image  
+   • Icon Prefab → the RadarIcon prefab  
+   • Radar Range → e.g. 100
+7. On every GameObject you want tracked (enemies, pickups, etc.), add the RadarContact component.
+8. Press Play: any GameObject with RadarContact will spawn an icon in RadarUI, moving so “up” = player forward.
